@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 
-// prints the highest element first
+// prints the largest element first / on top
 void displayPriorityQueue(priority_queue<int> pq) {
     while (!pq.empty()) {
         cout << pq.top() << " ";
@@ -22,7 +22,7 @@ int main() {
 
     displayPriorityQueue(pq);
 
-    // we want the lowest element first
+    // we are asking for the smallest element first
     priority_queue<int, vector<int>, greater<int>> pq_min;
     pq_min.push(5);
     pq_min.push(1);
